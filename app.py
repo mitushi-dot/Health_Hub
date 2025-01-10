@@ -218,7 +218,7 @@ if selected == 'Heart Disease Prediction':
 if selected == "Parkinsons Prediction":
 
     # Page title
-    st.title("Parkinson's Disease Prediction using ML")
+    st.title("Parkinson's Disease Prediction ")
 
     # Collecting user inputs
     col1, col2, col3, col4, col5 = st.columns(5)
@@ -315,7 +315,7 @@ relation_mapping = {'Relation1': 1, 'Relation2': 2}  # Replace with actual mappi
 
 if selected == 'Autism Prediction':
     # Page title
-    st.title('Autism Prediction using ML')
+    st.title('Autism Prediction')
 
     col1, col2, col3 = st.columns(3)
 
@@ -505,7 +505,7 @@ if selected == 'Breast Cancer Survival':
 
 # Cognitive Decline Prediction Page
 if selected == 'Alzheimers Check':
-    st.title('Cognitive Decline Prediction using ML')
+    st.title('Cognitive Decline Prediction ')
 
       
 
@@ -661,11 +661,11 @@ if selected == 'Alzheimers Check':
 ]
 
 
-if st.button('Predict Alzheimer\'s Risk'):
+        
     alzheimers_prediction = alzheimers_model.predict([user_input])  
      
     if alzheimers_prediction[0] == 1:
-        st.success('The person is at risk of Alzheimer\'s disease.')
+         st.success('The person is at risk of Alzheimer\'s disease.')
     else:
          st.success('The person is not at risk of Alzheimer\'s disease.')
 
@@ -757,7 +757,7 @@ if selected == 'Lung Cancer Prediction':
          
     #typhoid prediction
 if selected == 'Typhoid Test':
-    st.title('Predicting typhoid using ML')
+    st.title('Predicting typhoid')
 
     # Collecting user inputs
     col1, col2, col3 = st.columns(3)
